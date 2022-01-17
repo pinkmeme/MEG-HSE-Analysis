@@ -124,6 +124,7 @@ for epoch in range(num_epochs):
     loss = criterion(outputs, y_train)
     loss.backward()
 
+
     optimizer.step()
 
     print("Epoch: %d, loss: %1.5f" % (epoch, loss.item()))
